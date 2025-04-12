@@ -1,0 +1,146 @@
+.form-container {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    min-width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.aba>input {
+    display: none
+}
+
+.aba>input+div {
+    display: none
+}
+
+.aba>input:checked+div {
+    display: block
+}
+
+h3 {
+    color: #005b9e;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #555;
+}
+
+.help-icon {
+    background: orange;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: help;
+}
+
+.btn {
+    background: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+}
+
+.btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.add-btn {
+    margin-top: auto;
+    align-self: flex-end;
+    padding: 6px 12px;
+    background: #ccc;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
