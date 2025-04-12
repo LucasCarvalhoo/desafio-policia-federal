@@ -1,7 +1,7 @@
 :root {
     --primary-color: #296da8;
     --primary-hover: #ffffff;
-    --bg-color: #a9bcd0;
+    --bg-color: #ffffff;
     --text-primary: #333333;
     --text-secundary: #d8dbe2;
     --error-color: #A94442;
@@ -23,10 +23,9 @@
   body {
     background-color: var(--bg-color);
     color: var(--text-primary);
-    /* min-height: 100vh; */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     position: relative;
     overflow-x: hidden;
   }

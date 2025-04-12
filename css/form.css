@@ -1,10 +1,15 @@
-.form-container {
-    width: 100%;
+.header-container {
+    min-width: 100%;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: 2.5rem;
     position: relative;
     overflow: hidden;
+    max-height: 64px;
+}
+
+.form-container {
+    padding: 1rem;
 }
 
 .container {
@@ -21,6 +26,52 @@ header {
     position: sticky;
     top: 0;
     min-width: 100%;
+    padding: 0.75rem 3rem;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-menu {}
+
+.nav-menu ul {
+    display: flex;
+
+}
+
+.nav-menu ul li {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 24px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+    position: relative;
+    padding: 0.5rem 0;
+
+}
+
+.nav-menu ul li a:hover {
+    color: red;
+}
+
+.nav-menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: red;
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
 }
 
 .header-container {
@@ -30,14 +81,36 @@ header {
     padding: 1rem 0;
 }
 
+.info-container{
+    display: flex;
+    align-items: center;
+}
+
+.info-session{
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
+    border-right: 1px solid white;
+    padding-right: 1em;
 }
 
 .logo img {
     height: 40px;
+}
+
+.logo-text{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.aba {
+    min-width: 100%;
 }
 
 .aba>input {
@@ -60,10 +133,7 @@ h3 {
 
 form {
     background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    max-width: 1000px;
-    margin: auto;
+    border-radius: 20px;
 }
 
 .form-row {
@@ -144,3 +214,33 @@ select {
     border-radius: 3px;
     cursor: pointer;
 }
+
+.form-container label {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.form-container:has(#conteudo1:checked) label[for="conteudo1"],
+.form-container:has(#conteudo2:checked) label[for="conteudo2"],
+.form-container:has(#conteudo3:checked) label[for="conteudo3"],
+.form-container:has(#conteudo4:checked) label[for="conteudo4"] {
+    border-bottom-color: rgb(0, 92, 187);
+}
+
+.label-description {
+    display: inline-block;
+    padding: 10px 16px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .label-description:hover {
+    background-color: #f2f2f2;
+  }
+  
