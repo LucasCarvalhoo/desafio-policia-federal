@@ -6,6 +6,7 @@
     position: relative;
     overflow: hidden;
     max-height: 64px;
+    color: var(--text-secundary);
 }
 
 .form-container {
@@ -46,7 +47,7 @@ header {
 
 .nav-menu ul li a {
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--text-secundary);
     font-weight: 500;
     font-size: 0.95rem;
     transition: color 0.2s;
@@ -56,7 +57,7 @@ header {
 }
 
 .nav-menu ul li a:hover {
-    color: red;
+    color: var(--input-bg);
 }
 
 .nav-menu ul li a::after {
@@ -66,7 +67,7 @@ header {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: red;
+    background: var(--input-bg);
     transition: width 0.3s ease;
 }
 
@@ -148,6 +149,7 @@ form {
     flex-direction: column;
     flex: 1;
     min-width: 200px;
+    font-weight: 500;
 }
 
 label {
@@ -238,6 +240,7 @@ select {
     cursor: pointer;
     align-items: center;
     transition: background-color 0.3s, border-color 0.3s;
+    font-weight: 600;
   }
   
   .label-description:hover {
