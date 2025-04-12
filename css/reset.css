@@ -1,32 +1,36 @@
 :root {
-    --primary-color: #296da8;
-    --primary-hover: #ffffff;
-    --bg-color: #ffffff;
-    --text-primary: #333333;
-    --text-secundary: #d8dbe2;
-    --error-color: #A94442;
-    --sucess-color: #4caf50;
-    --warning-color: #f0ad4e;
-    --input-bg: #e5e5e5;
-    --border-radius: 8px;
-    --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2)
-    --transition: all 0.3s ease;
-    --primary-hover: #286499;
-  }
+  --primary-color: #296da8;
+  --primary-hover: #ffffff;
+  --bg-color: #ffffff;
+  --text-primary: #333333;
+  --text-secundary: #d8dbe2;
+  --error-color: #A94442;
+  --sucess-color: #4caf50;
+  --warning-color: #f0ad4e;
+  --input-bg: #e5e5e5;
+  --border-radius: 8px;
+  --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s ease;
+  --primary-hover: #286499;
+}
 
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-primary);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow-x: hidden;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main-content {
+  flex: 1;
+}

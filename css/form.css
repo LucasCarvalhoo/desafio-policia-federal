@@ -1,11 +1,10 @@
 .header-container {
     min-width: 100%;
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
     padding: 2.5rem;
     position: relative;
     overflow: hidden;
-    max-height: 64px;
+    min-height: 64px;
     color: var(--text-secundary);
 }
 
@@ -17,7 +16,6 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 1.5rem;
 }
 
 header {
@@ -263,7 +261,7 @@ select {
     display: flex;
     gap: 1rem;
     z-index: 1000;
-    
+
 }
 
 .form-buttons {
@@ -272,10 +270,187 @@ select {
     display: flex;
     gap: 1rem;
     z-index: 1000;
-  }
-  
+}
+
 
 
 .form-btn:hover {
     background-color: var(--primary-hover);
+}
+
+.pf-footer {
+    background-color: #00264d;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.pf-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pf-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.pf-logo {
+    height: 60px;
+    gap: 1rem;
+    border-right: 1px solid white;
+    padding-right: 3rem;
+}
+
+.pf-logo img {
+    height: 60px;
+}
+
+.pf-footer-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.pf-link {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.lock-icon img {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.pf-link i {
+    margin-right: 5px;
+}
+
+.pf-top-btn {
+    background-color: #003366;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pf-top-btn:hover {
+    background-color: #004080;
+}
+
+.lock-icon {
+    align-items: center;
+}
+
+.lock-icon img {
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .info-session {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        list-style: none;
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        color: #003366;
+        font-weight: bold;
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .form-btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .label-description {
+        display: block;
+        padding: 0.5rem;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+    }
+
+    .label-description:hover {
+        border-color: #003366;
+    }
+
+    .pf-footer-content {
+        padding: 1rem;
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .pf-footer-left {
+        align-items: center;
+    }
+
+    .pf-footer-left img {
+        width: 60px;
+    }
+
+    .pf-footer-text {
+        font-size: 0.9rem;
+    }
 }
