@@ -3,18 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Página oficial da Polícia Federal para solicitação e emissão de passaporte. Segurança, agilidade e atendimento ao cidadão.">
+    <meta name="keywords" content="passaporte, polícia federal, agendamento, emissão, documento de viagem, Brasil">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Policia Federal - Passaporte</title>
+    <title>Polícia Federal - Passaporte</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="main-content">
+    <main class="main-content">
         <header>
             <div class="container header-container">
-                <div class="info-container">
+                <section class="info-container">
                     <div class="logo">
-                        <img src="assets/logo.png" alt="Policía Federal - Passaporte">
+                        <img class="logo-img" src="assets/logo.png" alt="Policía Federal - Passaporte">
                         <div>
                             <p class="logo-text">Polícia Federal</p>
                         </div>
@@ -22,16 +25,19 @@
                     <div class="info-session">
                         <p>Divisão de Passaporte</p>
                     </div>
-                </div>
+                </section>
 
-                <div class="nav-menu">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Solicitação de passaporte</a></li>
-                        <li><a href="#">Agendamento de atendimento</a></li>
-                        <li><a href="#">Outros serviços</a></li>
+
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Solicitação de passaporte</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Agendamento de atendimento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Outros serviços</a></li>
                     </ul>
-                </div>
+                </nav>
+
+
             </div>
         </header>
         <div class="form-container">
@@ -42,9 +48,9 @@
             <div class="aba">
                 <input type="radio" id="conteudo1" name="abas" checked>
                 <div class="form-group">
-                    <form>
-                        <div class="section">
-                            <h3>Dados Pessoais</h3>
+                    <form action="#" method="post">
+                        <section>
+                            <h2 class="section-title">Dados Pessoais</h2>
                             <div class="form-row">
                                 <div class="form-group"><label>Nome completo*:</label><input type="text"></div>
                                 <div class="form-group"><label>Sexo*:</label><select>
@@ -83,7 +89,7 @@
                                 <div class="form-group"><label>Nacionalidade*:</label><input type="text" value="BRASIL">
                                 </div>
                             </div>
-                        </div>
+                        </section>
                         <div class="form-buttons">
                             <label for="conteudo2" class="form-btn">Próximo</label>
                         </div>
@@ -94,9 +100,9 @@
             <div class="aba">
                 <input type="radio" id="conteudo2" name="abas">
                 <div class="form-group">
-                    <form>
-                        <div class="section">
-                            <h3>Documento de Indentificação</h3>
+                    <form action="#" method="post">
+                        <section>
+                            <h2 class="section-title">Documento de Indentificação</h2>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>Número:</label>
@@ -209,16 +215,16 @@
                                 <label for="conteudo1" class="form-btn">Anterior</label>
                                 <label for="conteudo3" class="form-btn">Próximo</label>
                             </div>
-                        </div>
+                        </section>
                     </form>
                 </div>
             </div>
             <div class="aba">
                 <input type="radio" id="conteudo3" name="abas">
                 <div class="form-group">
-                    <form>
-                        <div class="section">
-                            <h3>Dados complementares</h3>
+                    <form action="#" method="post">
+                        <section class="section">
+                            <h2 class="section-title">Dados complementares</h2>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>Profissão*:</label>
@@ -290,16 +296,16 @@
                                 <label for="conteudo2" class="form-btn">Anterior</label>
                                 <label for="conteudo4" class="form-btn">Próximo</label>
                             </div>
-                        </div>
+                        </section>
                     </form>
                 </div>
             </div>
             <div class="aba">
                 <input type="radio" id="conteudo4" name="abas">
                 <div class="form-group">
-                    <form>
-                        <div class="section">
-                            <h3>Revisar dados</h3>
+                    <form action="#" method="post">
+                        <section>
+                            <h2 class="section-title">Revisar dados</h2>
                             <p>
                                 Caso detecte algum erro nos dados a seguir, volte ao campo correspondente para corrigir.
                                 Erro em algum desses campos implicará em <strong>ATRASO</strong> na entrega do seu
@@ -329,31 +335,31 @@
                                 <label for="conteudo3" class="form-btn">Anterior</label>
                                 <label for="conteudo4" class="form-btn">Enviar</label>
                             </div>
-                        </div>
+                        </section>
                     </form>
                 </div>
             </div>
         </div>
 
-    </div>
+    </main>
     <footer class="pf-footer">
         <div class="pf-footer-content">
             <div class="pf-footer-left">
-                <div class="pf-logo">
-                    <img src="assets/logo.png" alt="Logo da Polícia Federal">
+                <div class="footer-logo-container">
+                    <img class="footer-logo" src="assets/logo.png" alt="Logo da Polícia Federal">
                 </div>
                 <div class="pf-footer-text">
                     <div class="pf-privacidade">
                         <a href="#" class="pf-link">
                             <i class="lock-icon">
-                                <img src="assets/cadeado.png" alt="">
+                                <img class="icon-cadeado" src="assets/cadeado.png" alt="">
                             </i>
                             Política de Privacidade
                         </a>
                     </div>
                     Portal de Serviços da Polícia Federal<br>
                     Todos os direitos reservados<br>
-                    Versão 1.0.0
+                    Versão 1.0.1
                 </div>
             </div>
         </div>
