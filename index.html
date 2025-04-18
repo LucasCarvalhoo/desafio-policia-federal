@@ -12,34 +12,33 @@
 </head>
 
 <body>
-    <main class="main-content">
-        <header>
-            <div class="container header-container">
-                <section class="info-container">
-                    <div class="logo">
-                        <img class="logo-img" src="assets/logo.png" alt="Policía Federal - Passaporte">
-                        <div>
-                            <p class="logo-text">Polícia Federal</p>
-                        </div>
+
+    <header>
+        <div class="container header-container">
+            <div class="info-container">
+                <div class="logo">
+                    <img class="logo-img" src="assets/logo.png" alt="Policía Federal - Passaporte">
+                    <div>
+                        <p class="logo-text">Polícia Federal</p>
                     </div>
-                    <div class="info-session">
-                        <p>Divisão de Passaporte</p>
-                    </div>
-                </section>
-
-
-                <nav class="nav-menu">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Solicitação de passaporte</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Agendamento de atendimento</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Outros serviços</a></li>
-                    </ul>
-                </nav>
-
-
+                </div>
+                <div class="info-session">
+                    <p>Divisão de Passaporte</p>
+                </div>
             </div>
-        </header>
+
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Solicitação de passaporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Agendamento de atendimento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Outros serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
         <div class="form-container">
             <label class="label-description" for="conteudo1">Dados pessoais</label>
             <label class="label-description" for="conteudo2">Documentos</label>
@@ -52,41 +51,115 @@
                         <section>
                             <h2 class="section-title">Dados Pessoais</h2>
                             <div class="form-row">
-                                <div class="form-group"><label>Nome completo*:</label><input type="text"></div>
-                                <div class="form-group"><label>Sexo*:</label><select>
-                                        <option>Selecione</option>
-                                    </select></div>
+                                <div class="form-group"><label>Nome completo*:</label><input type="text" required></div>
+                                <div class="form-group"><label>Sexo*:</label>
+                                    <select name="sexo" required>
+                                        <option value="">Selecione</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="nao-informado">Prefiro não informar</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group"><label>Filiação 1:</label><input type="text"></div>
-                                <div class="form-group"><label>Sexo:</label><select>
-                                        <option>Selecione</option>
-                                    </select></div>
+                                <div class="form-group"><label>Filiação 1:</label><input type="text" required></div>
+                                <div class="form-group"><label>Sexo:</label>
+                                    <select name="sexo" required>
+                                        <option value="">Selecione</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="nao-informado">Prefiro não informar</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group"><label>Filiação 2:</label><input type="text"></div>
-                                <div class="form-group"><label>Sexo:</label><input type="text"></div>
+                                <div class="form-group"><label>Filiação 2:</label><input type="text" required></div>
+                                <div class="form-group"><label>Sexo:</label>
+                                    <select name="sexo" required>
+                                        <option value="">Selecione</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="nao-informado">Prefiro não informar</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group"><label>Data de nascimento*:</label><input type="date"
-                                        placeholder=""></div>
+                                        placeholder="" required></div>
                                 <div class="checkbox-group">
                                     <label><input type="checkbox"> Emancipado</label>
                                     <label><input type="checkbox"> Adoção Internacional</label>
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group"><label>Raça ou cor*:</label><select>
-                                        <option>Selecione</option>
-                                    </select></div>
-                                <div class="form-group"><label>Estado civil:</label><select>
-                                        <option>Selecione</option>
-                                    </select></div>
+                                <div class="form-group"><label>Raça ou cor*:</label>
+                                    <select name="raca" required>
+                                        <option value="">Selecione</option>
+                                        <option value="branca">Branca</option>
+                                        <option value="preta">Preta</option>
+                                        <option value="parda">Parda</option>
+                                        <option value="amarela">Amarela</option>
+                                        <option value="indigena">Indígena</option>
+                                        <option value="nao-declarar">Prefiro não declarar</option>
+                                    </select>
+                                </div>
+                                <div class="form-group"><label>Estado civil:</label>
+                                    <select name="estado-civil" required>
+                                        <option value="">Selecione</option>
+                                        <option value="solteiro">Solteiro(a)</option>
+                                        <option value="casado">Casado(a)</option>
+                                        <option value="separado">Separado(a)</option>
+                                        <option value="divorciado">Divorciado(a)</option>
+                                        <option value="viuvo">Viúvo(a)</option>
+                                        <option value="uniao-estavel">União Estável</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-row small-text">(para brasileiros com múltipla nacionalidade, selecionar
                                 Brasil)</div>
                             <div class="form-row">
-                                <div class="form-group"><label>Nacionalidade*:</label><input type="text" value="BRASIL">
+                                <div class="form-group">
+                                    <label>Nacionalidade*:</label>
+                                    <select name="nacionalidade" required>
+                                        <option value="AFEGÃO">AFEGÃO</option>
+                                        <option value="AFRICANO DO SUL">AFRICANO DO SUL</option>
+                                        <option value="ALEMÃO">ALEMÃO</option>
+                                        <option value="ARGENTINO">ARGENTINO</option>
+                                        <option value="AUSTRALIANO">AUSTRALIANO</option>
+                                        <option value="BELGA">BELGA</option>
+                                        <option value="BOLIVIANO">BOLIVIANO</option>
+                                        <option value="BRASILEIRO" selected>BRASILEIRO</option>
+                                        <option value="CANADENSE">CANADENSE</option>
+                                        <option value="CHILENO">CHILENO</option>
+                                        <option value="CHINÊS">CHINÊS</option>
+                                        <option value="COLOMBIANO">COLOMBIANO</option>
+                                        <option value="CUBANO">CUBANO</option>
+                                        <option value="DINAMARQUÊS">DINAMARQUÊS</option>
+                                        <option value="EGÍPCIO">EGÍPCIO</option>
+                                        <option value="ESPANHOL">ESPANHOL</option>
+                                        <option value="ESTADUNIDENSE">ESTADUNIDENSE</option>
+                                        <option value="FRANCÊS">FRANCÊS</option>
+                                        <option value="HOLANDÊS">HOLANDÊS</option>
+                                        <option value="INDIANO">INDIANO</option>
+                                        <option value="INGLÊS">INGLÊS</option>
+                                        <option value="IRANIANO">IRANIANO</option>
+                                        <option value="ISRAELENSE">ISRAELENSE</option>
+                                        <option value="ITALIANO">ITALIANO</option>
+                                        <option value="JAPONÊS">JAPONÊS</option>
+                                        <option value="MEXICANO">MEXICANO</option>
+                                        <option value="NORUEGUÊS">NORUEGUÊS</option>
+                                        <option value="PARAGUAIO">PARAGUAIO</option>
+                                        <option value="PERUANO">PERUANO</option>
+                                        <option value="PORTUGUÊS">PORTUGUÊS</option>
+                                        <option value="RUSSO">RUSSO</option>
+                                        <option value="SUECO">SUECO</option>
+                                        <option value="SUÍÇO">SUÍÇO</option>
+                                        <option value="UCRANIANO">UCRANIANO</option>
+                                        <option value="URUGUAIO">URUGUAIO</option>
+                                        <option value="VENEZUELANO">VENEZUELANO</option>
+                                        <option value="OUTRO">OUTRO</option>
+                                    </select>
+
                                 </div>
                             </div>
                         </section>
@@ -110,7 +183,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Data de emissão:</label>
-                                    <input type="text" placeholder="__/__/____">
+                                    <input type="date" placeholder="__/__/____">
                                 </div>
                             </div>
                             <div class="form-row">
@@ -120,8 +193,35 @@
                                 </div>
                                 <div class="form-group">
                                     <label>UF de expedição:</label>
-                                    <select>
-                                        <option>Selecione</option>
+                                    <select name="uf" required>
+                                        <option value="">Selecione</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
                                     </select>
                                 </div>
                             </div>
@@ -151,8 +251,13 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>Tipo:</label>
-                                    <select>
-                                        <option>Selecione</option>
+                                    <select name="tipo-certidao" required>
+                                        <option value="">Selecione</option>
+                                        <option value="nascimento">Certidão de Nascimento</option>
+                                        <option value="casamento">Certidão de Casamento</option>
+                                        <option value="obito">Certidão de Óbito</option>
+                                        <option value="union-estavel">Certidão de União Estável</option>
+                                        <option value="divorcio">Certidão de Divórcio</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -177,8 +282,35 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>UF de expedição:</label>
-                                    <select>
-                                        <option>Selecione</option>
+                                    <select name="uf-expedicao" required>
+                                        <option value="">Selecione</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -191,8 +323,14 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>Situação*:</label>
-                                    <select>
-                                        <option>Selecione</option>
+                                    <select name="situacao" required>
+                                        <option value="">Selecione</option>
+                                        <option value="ativa">Ativa</option>
+                                        <option value="suspensa">Suspensa</option>
+                                        <option value="cancelada">Cancelada</option>
+                                        <option value="renovada">Renovada</option>
+                                        <option value="expirada">Expirada</option>
+                                        <option value="pendente">Pendente</option>
                                     </select>
                                 </div>
                             </div>
@@ -237,11 +375,11 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>E-mail*:</label>
-                                    <input type="email">
+                                    <input type="email" required>
                                 </div>
                                 <div class="form-group">
                                     <label>Confirmação do E-mail*:</label>
-                                    <input type="email">
+                                    <input type="email" required>
                                 </div>
                             </div>
 
@@ -257,9 +395,36 @@
                                 </div>
                                 <div class="form-group">
                                     <label>UF*:</label>
-                                    <select>
-                                        <option>Selecione</option>
-                                    </select>
+                                    <select name="uf" required>
+                                        <option value="">Selecione</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                      </select>                                      
                                 </div>
                             </div>
 

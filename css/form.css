@@ -31,6 +31,9 @@ header {
 }
 
 .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .nav-list {
         display: flex;
     }
