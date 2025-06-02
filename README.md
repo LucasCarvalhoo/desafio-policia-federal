@@ -123,23 +123,6 @@ O sistema foi desenvolvido com abordagem **mobile-first**, garantindo:
 - Tablet (768x1024)
 - Mobile (375x667, 360x640)
 
-## 🔒 Segurança e Privacidade
-
-- Interface simula sistema oficial (não processa dados reais)
-- Implementação de HTTPS recomendada para produção
-- Validação de dados no cliente e servidor
-- Política de privacidade integrada
-
-## 📈 Próximas Melhorias
-
-- [ ] Implementação de JavaScript para validações
-- [ ] Integração com APIs de CEP
-- [ ] Sistema de upload de documentos
-- [ ] Agendamento de atendimento
-- [ ] Notificações por e-mail
-- [ ] Modo escuro/claro
-- [ ] Suporte a múltiplos idiomas
-
 ## 👨‍💻 Autor
 
 Desenvolvido por [Lucas Carvalho](https://github.com/LucasCarvalhoo).
@@ -150,10 +133,8 @@ Orientador: Luan Oliveira
 
 Este projeto foi desenvolvido para fins educacionais como parte de um desafio de desenvolvimento front-end.
 
-## 📞 Contato
-
-Para dúvidas sobre o projeto, entre em contato com o orientador ou através dos canais oficiais do curso.
-
 ---
+
+Projeto desenvolvido como parte do programa Geração Tech do IEL 2025.
 
 **Nota**: Este é um projeto educacional e não está vinculado oficialmente à Polícia Federal do Brasil. Não utilize para solicitações reais de passaporte.
