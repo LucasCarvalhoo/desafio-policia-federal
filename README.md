@@ -110,19 +110,6 @@ O sistema foi desenvolvido com abordagem **mobile-first**, garantindo:
    - Use os botões "Anterior" e "Próximo" para navegar
    - Revise os dados na última etapa
 
-## 🧪 Testes
-
-### Compatibilidade de Navegadores
-- ✅ Chrome 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ Edge 90+
-
-### Dispositivos Testados
-- Desktop (1920x1080, 1366x768)
-- Tablet (768x1024)
-- Mobile (375x667, 360x640)
-
 ## 👨‍💻 Autor
 
 Desenvolvido por [Lucas Carvalho](https://github.com/LucasCarvalhoo).
@@ -131,7 +118,7 @@ Orientador: Luan Oliveira
 
 ## 📄 Licença
 
-Este projeto foi desenvolvido para fins educacionais como parte de um desafio de desenvolvimento front-end.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
