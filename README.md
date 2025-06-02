@@ -140,9 +140,11 @@ O sistema foi desenvolvido com abordagem **mobile-first**, garantindo:
 - [ ] Modo escuro/claro
 - [ ] Suporte a múltiplos idiomas
 
-## 👥 Equipe
+## 👨‍💻 Autor
 
-**Orientador**: Luan Oliveira
+Desenvolvido por [Lucas Carvalho](https://github.com/LucasCarvalhoo).
+
+Orientador: Luan Oliveira
 
 ## 📄 Licença
 
